@@ -1,0 +1,121 @@
+.title{
+    color: black;
+    font-size: 42px;
+    font-weight: 500;
+}
+
+.main__container{
+ 
+   display: flex;
+   flex-direction: column;
+   justify-content: center;
+
+   .main__slider{
+    padding: 0 10%;
+    display: flex;
+    height: 550px;
+    justify-content: center;
+
+    .slider__img{
+        border: 1px solid black;
+        height: 100%;
+        width: 100%;
+        object-fit: cover;
+    }
+   }
+
+   .main__categories{
+    align-items: center;
+
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+    justify-content: center;
+
+
+
+    .categories__container{
+        align-items: center;
+        display: flex;
+        flex-wrap: wrap;
+        gap: 25px;
+        height: auto;
+        justify-content: center;
+        max-width: 800px;
+
+           
+        .container__main__category{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+            height: 250px;
+            width: 250px;
+            border: 1px solid black;
+            text-decoration: none !important;
+            list-style: none;
+
+            .subTitle{
+                color: rgb(23, 23, 23);
+                font-weight: 300;
+                font-size: 24px;
+                text-decoration: none !important;
+                list-style: none;
+            } 
+   
+            .main__category{
+                height: 50%;
+                width: 100%;
+                transition: .4s all;
+
+                .category__thumbnail{
+                    height: 100%;
+                    width: 100%;
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    overflow: hidden;
+
+                    .category__img{
+                        transition: .4s all;
+                        object-fit: contain;
+                        height: 80%;
+                        width: 80%;
+                        transform: scaleX(-1);
+                    }
+                }
+            }
+        }
+
+            .container__main__category:hover{
+                cursor: pointer;
+                .category__img{
+                    scale: 1.1;
+                }
+            }
+    }   
+   }
+
+   .main__about{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+   
+    gap: 25px;
+
+    .about__title{}
+
+    .about__container{
+        max-width: 900px;
+        .about__text{
+            font-weight: 300;
+            letter-spacing: 0.2PX;
+            text-align: center;
+            color: black;
+            font-size: 18px;
+        }
+    }
+   }
+
+}
